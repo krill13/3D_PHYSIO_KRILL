@@ -13,32 +13,31 @@
 
 &run_nml
 
- ystart  = 2006, ! 2006 , 2012
+ ystart  = 2012, ! 2006 , 2012
  mstart  = 06,
  dstart  = 01,
 
- yend    = 2006, ! 2006 , 2012
+ yend    = 2012, ! 2006 , 2012
  mend    = 07,
  dend    = 01,
 
- !infile         = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2003_2h_ave_TSUV.nc',
- !infile         = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2012_2h_ave_TSUV.nc',
- infile         = '/home/FORCING/bgcm_out2h_20060101_20061231_ave_TSUV.nc',
+ !infile         = '/home/FORCING/PMZA_IML_2003_2h_ave_TSUV.nc',
+ infile         = '/home/FORCING/PMZA_IML_2012_2h_ave_TSUV.nc',
+ !infile         = '/home/FORCING/bgcm_out2h_20060101_20061231_ave_TSUV.nc',
 
- !infile_food    = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2003_2h_bgcm_02.nc',
- !infile_food    = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2012_2h_bgcm_02.nc',
- infile_food    = '/home/FORCING/bgcm_out2h_20060101_20061231_bgcm_02.nc',
+ !infile_food    = '/home/FORCING/PMZA_IML_2003_2h_bgcm_02.nc',
+ infile_food    = '/home/FORCING/PMZA_IML_2012_2h_bgcm_02.nc',
+ !infile_food    = '/home/FORCING/bgcm_out2h_20060101_20061231_bgcm_02.nc',
 
- FORC_PMZA      = .false., 
+ FORC_PMZA      = .true., 
 
  INTRA_SPE      = .false.,
 
- tnc_origin     = 1, 1, 2006, ! 1, 1, 2006,  1, 1, 2012
+ tnc_origin     = 1, 1, 2012, ! 1, 1, 2006,  1, 1, 2012
 
- tnc_origin_out = '01-JAN-2006 00:00:00', !'01-JAN-2006 00:00:00',  '01-JAN-2012 00:00:00', 
+ tnc_origin_out = '01-JAN-2012 00:00:00', !'01-JAN-2006 00:00:00',  '01-JAN-2012 00:00:00', 
 
- tnc_units      = 'day since 2006-01-01 00:00:00'/ !'day since 2006-01-01 00:00:00'/ 'day since 2012-01-01 00:00:00'/
-
+ tnc_units      = 'day since 2012-01-01 00:00:00'/ !'day since 2006-01-01 00:00:00'/ 'day since 2012-01-01 00:00:00'/
 
 ! Provide some parameters for the run (default provided in zeros.f90):
  !  part_spec     = species of krill ( 0 = surface dwellers | 1 = M. norvegica | 2 = T. raschii )
@@ -70,11 +69,11 @@
  part_fac      = 1,
  part_freq     = 300,
 
- y_Astart      = 2006,
+ y_Astart      = 2012,
  m_Astart      = 06,
  d_Astart      = 01,
 
- y_Aend        = 2006,
+ y_Aend        = 2012,
  m_Aend        = 07,
  d_Aend        = 01,
 
@@ -92,7 +91,7 @@
  !initback      = '/home/dbenkort/Documents/MODELS/git_krill/NEMO_GSL/trunk/KrillModelNETCDF/TEST_BACK_TR_traj.nc',
  partfile      = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/src/run/data/part_gulf_unif.dat',
  parsfile      = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/src/run/data/PARS_3D.dat',
- outfile       = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/OUTPUT/test.nc'/ 
+ outfile       = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/OUTPUT/CLONE_2012_TR'/ 
 
 
 ! Provide parameters for physiological simulation
