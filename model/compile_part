@@ -1,0 +1,37 @@
+# Compilation avec PGI fortran.
+
+# Programes source. Lister entre guillemets si plus d'un fichier.
+# Ne PAS utiliser le ~ pour faire reference au repertoire HOME: Utiliser $HOME.
+
+SRC="ran_mod.f90 OPA_GET_XY_LL.f90 ll_to_xy_NEMO.f90 part_def.f90 update2.f90 zeros.f90 part.f90 part_model.f90"
+
+
+# Requis pour compiler avec PGI fortran
+
+INCDIR=-I/usr/local/netcdf-pgi/include
+
+LIBDIR=-L/usr/local/netcdf-pgi/lib
+
+LIBS=-lnetcdf
+
+# Options de pre-processing -DBACK = transport backward in time. Par defaut forward.
+
+PP="-Mpreprocess -DBACK"
+#PP=-Mpreprocess
+
+
+# Optimization options
+
+OPT="-Minfo -fast"
+
+
+# Nom de l'executable a generer
+
+EXE=part_BWD.x
+
+
+# Compilation
+
+pgf90 $PP $OPT $INCDIR $LIBDIR $SRC $LIBS -o $EXE
+
+mv -i $EXE ../Run

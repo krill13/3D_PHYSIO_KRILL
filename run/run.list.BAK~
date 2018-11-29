@@ -1,0 +1,143 @@
+! Provide simulation parameters
+ !  ystart         = starting year of the simulation period
+ !  mstart         = starting month
+ !  dstart         = starting day
+ !  yend           = end year of the simulation period
+ !  mend           = end month
+ !  dend           = end day
+ !  infile         = netcdf input file name
+ !  infile_food    = netcdf input food concentration file name
+ !  tnc_origin     = time orignin of the netcdf input file (can get it with "ncdump -h infile")
+ !  tnc_origin_out = character string for the time orignin of the netcdf output file (= input file; ferret complient)
+ !  tnc_units      = character string for the time units in the netcdf output file (ferret complient)
+
+&run_nml
+
+ ystart  = 2003, ! 2006 , 2012
+ mstart  = 04,
+ dstart  = 01,
+
+ yend    = 2003, ! 2006 , 2012
+ mend    = 09,
+ dend    = 30,
+
+ infile         = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2003_2h_ave_TSUV.nc',
+ !infile         = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2012_2h_ave_TSUV.nc',
+ !infile         = '/home/FORCING/bgcm_out2h_20060101_20061231_ave_TSUV.nc',
+ !infile         = '/home/FORCING/L_2011_M2b_ave_TSUV.nc',
+
+ infile_food    = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2003_2h_bgcm_02.nc',
+ !infile_food    = '/run/media/dbenkort/Seagate Backup Plus Drive/PMZA_IML_2012_2h_bgcm_02.nc',
+ !infile_food    = '/home/FORCING/bgcm_out2h_20060101_20061231_bgcm_02.nc',
+
+ FORC_PMZA      = .true., 
+
+ tnc_origin     = 1, 1, 2003, ! 1, 1, 2006,  1, 1, 2012
+
+ tnc_origin_out = '01-JAN-2003 00:00:00', !'01-JAN-2006 00:00:00',  '01-JAN-2012 00:00:00', 
+
+ tnc_units      = 'day since 2003-01-01 00:00:00'/ 'day since 2006-01-01 00:00:00'/ 'day since 2012-01-01 00:00:00'/
+
+
+! Provide some parameters for the run (default provided in zeros.f90):
+ !  part_spec     = species of krill ( 0 = surface dwellers | 1 = M. norvegica | 2 = T. raschii )
+ !  dvm           = Vertical migration (logical)
+ !  cell_out      = Particle out of the domain (logical)
+ !  part_fac      = # of particles per (xp,yp). 
+ !  If set part_fac to 1 for Lyapunov exponent study, do not forget to modify Run/input_particles accordingly (init_part.m)!
+ !  part_freq     = Frequency at which particles are added to the domain (in days)
+ !  y_Astart      = starting year of the advection period of particles
+ !  m_Astart      = starting month
+ !  d_Astart      = starting day 
+ !  y_Aend        = end year of the advection period of particles
+ !  m_Aend        = end month
+ !  d_Aend        = end day 
+ !  part_duration = duration of advection for each particle (days)
+ !  output_freq   = frequency of outputs in h (modified in the code to be in dt)
+ !  part_traj_out = record individual particles trajectories (netcdf format)
+ !  part_ftle_out = record individual particles trajectories on the grid for computing FTLEs (netcdf format)
+ !  part_prod     = produce particles at Gulf boundaries
+ !  partfile      = particles initialization file 
+ !  outfile       = output file prefix 
+
+&part_nml
+
+ part_spec     = 2,
+ clone         = .true.,
+ dvm           = .true.,
+ cell_out      = .false.,
+ part_fac      = 1,
+ part_freq     = 300,
+
+ y_Astart      = 2003,
+ m_Astart      = 04,
+ d_Astart      = 01,
+
+ y_Aend        = 2003,
+ m_Aend        = 09,
+ d_Aend        = 30,
+
+ part_duration = 365,
+
+ output_freq   = 2,
+
+ mature        = .true.,
+ phyto_threshold = 0.15
+
+ !nbpb          = 188,
+ !nb_back_time  = 2832,
+
+ initback      = '/home/dbenkort/Documents/MODELS/git_krill/NEMO_GSL/trunk/KrillModelNETCDF/TEST_BACK_TR_traj.nc',
+ partfile      = '/home/dbenkort/Documents/MODELS/git_krill/NEMO_GSL/trunk/run/data/part_gulf_unif.dat',
+ outfile       = '/home/dbenkort/Documents/MODELS/git_krill/NEMO_GSL/trunk/KrillModelNETCDF/TR_STATIC_CPMEZ'/ 
+
+
+! Provide parameters for physiological simulation
+ !  C2N     = carbon to nitrogen mass ratio of the different food items (Diatom, flagelates, micro- and mesozooplankton)
+ !  pref    = diet preference coefficient for each of the four food item
+ !  sex     = Sex of individual (0 = Female | 1 = Male)
+
+ !  Parameters of ingestion, respiration, develop and arrhenius functions
+ !  aw      =  The regression constant of length(mm)/mass(mgC) relationship    (1.6e-2 = M.norvegica  | 2.5e-3  = T.raschii)
+ !  bw      =  The regression coefficient of length(mm)/mass(mgC) relationship (2.56   = M.norvegica  | 2.98    = T.raschii)
+ !  ei      =  The activation energy of the process considered in eV           (0.2    = M.norvegica  | 0.2     = T.raschii)
+ !  a_molt  =  The regression constant of IMP(day) relationship                (20.62  = M.norvegica  | 15.30   = T.raschii)
+ !  b_molt  =  The regression coefficient of IMP(day)/temp(°C) relationship    (-1.16  = M.norvegica  | -0.91   = T.raschii)
+ !  k0      =  A scaling constant at T0 in l.h^–1.mgC^-3/4                     (      = M.norvegica  | 1       = T.raschii)
+ !  h0      =  A scaling constant at T0 in h.mgCfood^-1.mgC^-3/4               (150    = M.norvegica  | 1       = T.raschii)
+ !  A       =  Assimilation efficiency coefficent in %                         (0.6    = M.norvegica  | 1       = T.raschii)
+ !  r0      =  A scaling constant at T0 in mgC^3/4.h^-1                        (10e-3  = M.norvegica  | 1       = T.raschii)
+ !  w_molt  =  Percentage of mass loss due to moulting exuvie in % of mass     (0.062  = M.norvegica  | 0.05    = T.raschii)
+ !  a_egg   = The regression constant to the egg production / female length relationship (9.564857e-07 = M.norvegica)
+ !  b_egg   = The regression coefficient to the egg produciton / female length relationship (6.09      = M.norvegica)
+ !  mass_egg= The mass of one egg in mgC  (1.5e-3 = M.norvegica)
+
+
+&physio_nml
+
+ C2N             = 6.625, 6.625, 7., 7.,
+ sex_ini         = 1,        1,
+ mean_length_ini = 33.,      18.5,
+ min_length_ini  = 27.,      11.,
+ max_length_ini  = 39.,      27.,
+ aw_ini          = 0.016,    0.0025,
+ bw_ini          = 2.56,     2.98,
+ a_molt_ini      = 20.62,    15.3,
+ b_molt_ini      = -1.16,    -0.91,
+ w_molt_ini      = 0.0062,   0.005,
+ ei_ini          = 0.2,      0.2,
+ er_ini          = 0.5,      0.5,
+ t_lim_ini       = 30.,      12.,
+ A_ini           = 0.7,      0.7, 
+ k0_ini          = 1.59e-04, 2e-06,
+ k0_phy_ini      = 8.33e-06, 2.6e-03,
+ k0_zoo_ini      = 2.64e-03, 2.78e-03,
+ h0_ini          = 90648.,  224064.,
+ r0_ini          = 1.4e-07,  1.4e-07, 
+ rb_ini          = 0.96,    0.96, 
+ a_rep_ini       = 9.56e-07, 2.33e-01, 
+ b_rep_ini       = 6.09,     2.197,
+ mass_egg_ini    = 1.5e-3,   1.2e-3,
+ p_gonad_ini     = 0.05,     0.05,
+ grow_gonad_ini  = 1.0,      1.0, 
+ prop_mez_ini    = 0.69,     0.26, /

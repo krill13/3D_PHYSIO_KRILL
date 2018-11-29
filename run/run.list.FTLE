@@ -1,0 +1,61 @@
+! Provide simulation parameters
+!  ystart         = starting year of the simulation period
+!  mstart         = starting month
+!  dstart         = starting day
+!  yend           = end year of the simulation period
+!  mend           = end month
+!  dend           = end day
+!  infile         = netcdf input file name
+!  tnc_origin     = time orignin of the netcdf input file (can get it with "ncdump -h infile")
+!  tnc_origin_out = character string for the time orignin of the netcdf output file (= input file; ferret complient)
+!  tnc_units      = character string for the time units in the netcdf output file (ferret complient)
+
+&run_nml
+
+ ystart  = 2011,
+ mstart  = 10,
+ dstart  = 31,
+
+ yend    = 2011,
+ mend    = 1,
+ dend    = 29,
+
+ infile         = '/home/MapsF/Documents/JOB/FORCING/IRE7_ave_TSUV.nc',
+
+ tnc_origin     = 1, 5, 2005,
+
+ tnc_origin_out = '01-MAY-2005 00:00:00',
+
+ tnc_units      = 'day since 2005-05-01 00:00:00'/
+
+
+! Provide some parameters for the run (default provided in zeros.f90):
+!  part_spec     = species of krill (0 = surface dwellers | 1 = T. raschii | 2 = M. norvegica)
+!  fac_part      = # of particles per (xp,yp). 
+!  If set fac_part to 1 for Lyapunov exponent study, do not forget to modify Run/input_particles accordingly (init_part.m)!
+!  output_freq   = frequency of outputs in h (modified in the code to be in dt)
+!  part_traj_out = record individual particles trajectories (netcdf format)
+!  part_ftle_out = record individual particles trajectories on the grid for computing FTLEs (netcdf format)
+!  part_prod     = produce particles at Gulf boundaries
+!  partfile      = particles initialization file 
+!  outfile       = output fkrill_surf.xile prefix 
+
+&part_nml
+
+ part_spec     = 0,
+
+ fac_part      = 1,
+
+ output_freq   = 48,
+
+ part_nc_out   = .false.,
+
+ part_traj_out = .false.,
+
+ part_ftle_out = .true.,
+
+ part_prod     = .false.,
+
+ partfile      = 'data/part_domain_unif.dat',
+
+ outfile       = '/home/MapsF/Documents/JOB/OUTPUT/test_BWD'/

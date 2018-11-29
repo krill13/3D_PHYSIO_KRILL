@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -f *.o *~
+
+echo ''
+echo 'Cleaning done!'
+echo ''
