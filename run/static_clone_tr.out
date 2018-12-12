@@ -1,0 +1,808 @@
+
+ Date: 30 11 2018 :  3h 29m 15s
+ 
+ ! HAVE TO PROVIDE THE START & END DATES IN THE NAMELIST FILE "Run/run.list" !
+ 
+ ! HAVE TO PROVIDE SOME PARTICLES RELATED VARIABLES IN THE NAMELIST TOO      !
+ 
+ Krill species = Thysanoessa raschii
+ 
+         197         197         234         234          46          46        4392        4392
+ Input file timestep =        7200  s. Inner time loop =           1
+ jour départ:           1           6        2012
+ istart=      735021 initial jour=      734869
+ istart=        1824
+ final =         361 iend =        2184 istart =        1824 outputfreq =           1
+ it        1824
+ istart        1824
+ Cells with particles =         6576 ; generating all the particles in the grid
+  part_spec           2
+           1   18.5000000       2.49999994E-03  0.200000003       2.60000001E-03  0.959999979       1.20000006E-03   5.00000007E-02   1.00000000      0.259999990    
+ kd_end      735051 kd_start      735021 part_freq         300
+ Generated         6576  particles
+ Sequences of initialization =            1
+ Creation of netcdf file 
+ nctlen         180
+
+Time:  2012    6    1
+- it        1825
+ istart        1824
+- it        1826
+ istart        1824
+- it        1827
+ istart        1824
+* it        1828
+ istart        1824
+- it        1829
+ istart        1824
+- it        1830
+ istart        1824
+- it        1831
+ istart        1824
+- it        1832
+ istart        1824
+- it        1833
+ istart        1824
+- it        1834
+ istart        1824
+- it        1835
+ istart        1824
+o it        1836
+ istart        1824
+
+Time:  2012    6    2
+- it        1837
+ istart        1824
+- it        1838
+ istart        1824
+- it        1839
+ istart        1824
+* it        1840
+ istart        1824
+- it        1841
+ istart        1824
+- it        1842
+ istart        1824
+- it        1843
+ istart        1824
+- it        1844
+ istart        1824
+- it        1845
+ istart        1824
+- it        1846
+ istart        1824
+- it        1847
+ istart        1824
+o it        1848
+ istart        1824
+
+Time:  2012    6    3
+- it        1849
+ istart        1824
+- it        1850
+ istart        1824
+- it        1851
+ istart        1824
+* it        1852
+ istart        1824
+- it        1853
+ istart        1824
+- it        1854
+ istart        1824
+- it        1855
+ istart        1824
+- it        1856
+ istart        1824
+- it        1857
+ istart        1824
+- it        1858
+ istart        1824
+- it        1859
+ istart        1824
+o it        1860
+ istart        1824
+
+Time:  2012    6    4
+- it        1861
+ istart        1824
+- it        1862
+ istart        1824
+- it        1863
+ istart        1824
+* it        1864
+ istart        1824
+- it        1865
+ istart        1824
+- it        1866
+ istart        1824
+- it        1867
+ istart        1824
+- it        1868
+ istart        1824
+- it        1869
+ istart        1824
+- it        1870
+ istart        1824
+- it        1871
+ istart        1824
+o it        1872
+ istart        1824
+
+Time:  2012    6    5
+- it        1873
+ istart        1824
+- it        1874
+ istart        1824
+- it        1875
+ istart        1824
+* it        1876
+ istart        1824
+- it        1877
+ istart        1824
+- it        1878
+ istart        1824
+- it        1879
+ istart        1824
+- it        1880
+ istart        1824
+- it        1881
+ istart        1824
+- it        1882
+ istart        1824
+- it        1883
+ istart        1824
+o it        1884
+ istart        1824
+
+Time:  2012    6    6
+- it        1885
+ istart        1824
+- it        1886
+ istart        1824
+- it        1887
+ istart        1824
+* it        1888
+ istart        1824
+- it        1889
+ istart        1824
+- it        1890
+ istart        1824
+- it        1891
+ istart        1824
+- it        1892
+ istart        1824
+- it        1893
+ istart        1824
+- it        1894
+ istart        1824
+- it        1895
+ istart        1824
+o it        1896
+ istart        1824
+
+Time:  2012    6    7
+- it        1897
+ istart        1824
+- it        1898
+ istart        1824
+- it        1899
+ istart        1824
+* it        1900
+ istart        1824
+- it        1901
+ istart        1824
+- it        1902
+ istart        1824
+- it        1903
+ istart        1824
+- it        1904
+ istart        1824
+- it        1905
+ istart        1824
+- it        1906
+ istart        1824
+- it        1907
+ istart        1824
+o it        1908
+ istart        1824
+
+Time:  2012    6    8
+- it        1909
+ istart        1824
+- it        1910
+ istart        1824
+- it        1911
+ istart        1824
+* it        1912
+ istart        1824
+- it        1913
+ istart        1824
+- it        1914
+ istart        1824
+- it        1915
+ istart        1824
+- it        1916
+ istart        1824
+- it        1917
+ istart        1824
+- it        1918
+ istart        1824
+- it        1919
+ istart        1824
+o it        1920
+ istart        1824
+
+Time:  2012    6    9
+- it        1921
+ istart        1824
+- it        1922
+ istart        1824
+- it        1923
+ istart        1824
+* it        1924
+ istart        1824
+- it        1925
+ istart        1824
+- it        1926
+ istart        1824
+- it        1927
+ istart        1824
+- it        1928
+ istart        1824
+- it        1929
+ istart        1824
+- it        1930
+ istart        1824
+- it        1931
+ istart        1824
+o it        1932
+ istart        1824
+
+Time:  2012    6   10
+- it        1933
+ istart        1824
+- it        1934
+ istart        1824
+- it        1935
+ istart        1824
+* it        1936
+ istart        1824
+- it        1937
+ istart        1824
+- it        1938
+ istart        1824
+- it        1939
+ istart        1824
+- it        1940
+ istart        1824
+- it        1941
+ istart        1824
+- it        1942
+ istart        1824
+- it        1943
+ istart        1824
+o it        1944
+ istart        1824
+
+Time:  2012    6   11
+- it        1945
+ istart        1824
+- it        1946
+ istart        1824
+- it        1947
+ istart        1824
+* it        1948
+ istart        1824
+- it        1949
+ istart        1824
+- it        1950
+ istart        1824
+- it        1951
+ istart        1824
+- it        1952
+ istart        1824
+- it        1953
+ istart        1824
+- it        1954
+ istart        1824
+- it        1955
+ istart        1824
+o it        1956
+ istart        1824
+
+Time:  2012    6   12
+- it        1957
+ istart        1824
+- it        1958
+ istart        1824
+- it        1959
+ istart        1824
+* it        1960
+ istart        1824
+- it        1961
+ istart        1824
+- it        1962
+ istart        1824
+- it        1963
+ istart        1824
+- it        1964
+ istart        1824
+- it        1965
+ istart        1824
+- it        1966
+ istart        1824
+- it        1967
+ istart        1824
+o it        1968
+ istart        1824
+
+Time:  2012    6   13
+- it        1969
+ istart        1824
+- it        1970
+ istart        1824
+- it        1971
+ istart        1824
+* it        1972
+ istart        1824
+- it        1973
+ istart        1824
+- it        1974
+ istart        1824
+- it        1975
+ istart        1824
+- it        1976
+ istart        1824
+- it        1977
+ istart        1824
+- it        1978
+ istart        1824
+- it        1979
+ istart        1824
+o it        1980
+ istart        1824
+
+Time:  2012    6   14
+- it        1981
+ istart        1824
+- it        1982
+ istart        1824
+- it        1983
+ istart        1824
+* it        1984
+ istart        1824
+- it        1985
+ istart        1824
+- it        1986
+ istart        1824
+- it        1987
+ istart        1824
+- it        1988
+ istart        1824
+- it        1989
+ istart        1824
+- it        1990
+ istart        1824
+- it        1991
+ istart        1824
+o it        1992
+ istart        1824
+
+Time:  2012    6   15
+- it        1993
+ istart        1824
+- it        1994
+ istart        1824
+- it        1995
+ istart        1824
+* it        1996
+ istart        1824
+- it        1997
+ istart        1824
+- it        1998
+ istart        1824
+- it        1999
+ istart        1824
+- it        2000
+ istart        1824
+- it        2001
+ istart        1824
+- it        2002
+ istart        1824
+- it        2003
+ istart        1824
+o it        2004
+ istart        1824
+
+Time:  2012    6   16
+- it        2005
+ istart        1824
+- it        2006
+ istart        1824
+- it        2007
+ istart        1824
+* it        2008
+ istart        1824
+- it        2009
+ istart        1824
+- it        2010
+ istart        1824
+- it        2011
+ istart        1824
+- it        2012
+ istart        1824
+- it        2013
+ istart        1824
+- it        2014
+ istart        1824
+- it        2015
+ istart        1824
+o it        2016
+ istart        1824
+
+Time:  2012    6   17
+- it        2017
+ istart        1824
+- it        2018
+ istart        1824
+- it        2019
+ istart        1824
+* it        2020
+ istart        1824
+- it        2021
+ istart        1824
+- it        2022
+ istart        1824
+- it        2023
+ istart        1824
+- it        2024
+ istart        1824
+- it        2025
+ istart        1824
+- it        2026
+ istart        1824
+- it        2027
+ istart        1824
+o it        2028
+ istart        1824
+
+Time:  2012    6   18
+- it        2029
+ istart        1824
+- it        2030
+ istart        1824
+- it        2031
+ istart        1824
+* it        2032
+ istart        1824
+- it        2033
+ istart        1824
+- it        2034
+ istart        1824
+- it        2035
+ istart        1824
+- it        2036
+ istart        1824
+- it        2037
+ istart        1824
+- it        2038
+ istart        1824
+- it        2039
+ istart        1824
+o it        2040
+ istart        1824
+
+Time:  2012    6   19
+- it        2041
+ istart        1824
+- it        2042
+ istart        1824
+- it        2043
+ istart        1824
+* it        2044
+ istart        1824
+- it        2045
+ istart        1824
+- it        2046
+ istart        1824
+- it        2047
+ istart        1824
+- it        2048
+ istart        1824
+- it        2049
+ istart        1824
+- it        2050
+ istart        1824
+- it        2051
+ istart        1824
+o it        2052
+ istart        1824
+
+Time:  2012    6   20
+- it        2053
+ istart        1824
+- it        2054
+ istart        1824
+- it        2055
+ istart        1824
+* it        2056
+ istart        1824
+- it        2057
+ istart        1824
+- it        2058
+ istart        1824
+- it        2059
+ istart        1824
+- it        2060
+ istart        1824
+- it        2061
+ istart        1824
+- it        2062
+ istart        1824
+- it        2063
+ istart        1824
+o it        2064
+ istart        1824
+
+Time:  2012    6   21
+- it        2065
+ istart        1824
+- it        2066
+ istart        1824
+- it        2067
+ istart        1824
+* it        2068
+ istart        1824
+- it        2069
+ istart        1824
+- it        2070
+ istart        1824
+- it        2071
+ istart        1824
+- it        2072
+ istart        1824
+- it        2073
+ istart        1824
+- it        2074
+ istart        1824
+- it        2075
+ istart        1824
+o it        2076
+ istart        1824
+
+Time:  2012    6   22
+- it        2077
+ istart        1824
+- it        2078
+ istart        1824
+- it        2079
+ istart        1824
+* it        2080
+ istart        1824
+- it        2081
+ istart        1824
+- it        2082
+ istart        1824
+- it        2083
+ istart        1824
+- it        2084
+ istart        1824
+- it        2085
+ istart        1824
+- it        2086
+ istart        1824
+- it        2087
+ istart        1824
+o it        2088
+ istart        1824
+
+Time:  2012    6   23
+- it        2089
+ istart        1824
+- it        2090
+ istart        1824
+- it        2091
+ istart        1824
+* it        2092
+ istart        1824
+- it        2093
+ istart        1824
+- it        2094
+ istart        1824
+- it        2095
+ istart        1824
+- it        2096
+ istart        1824
+- it        2097
+ istart        1824
+- it        2098
+ istart        1824
+- it        2099
+ istart        1824
+o it        2100
+ istart        1824
+
+Time:  2012    6   24
+- it        2101
+ istart        1824
+- it        2102
+ istart        1824
+- it        2103
+ istart        1824
+* it        2104
+ istart        1824
+- it        2105
+ istart        1824
+- it        2106
+ istart        1824
+- it        2107
+ istart        1824
+- it        2108
+ istart        1824
+- it        2109
+ istart        1824
+- it        2110
+ istart        1824
+- it        2111
+ istart        1824
+o it        2112
+ istart        1824
+
+Time:  2012    6   25
+- it        2113
+ istart        1824
+- it        2114
+ istart        1824
+- it        2115
+ istart        1824
+* it        2116
+ istart        1824
+- it        2117
+ istart        1824
+- it        2118
+ istart        1824
+- it        2119
+ istart        1824
+- it        2120
+ istart        1824
+- it        2121
+ istart        1824
+- it        2122
+ istart        1824
+- it        2123
+ istart        1824
+o it        2124
+ istart        1824
+
+Time:  2012    6   26
+- it        2125
+ istart        1824
+- it        2126
+ istart        1824
+- it        2127
+ istart        1824
+* it        2128
+ istart        1824
+- it        2129
+ istart        1824
+- it        2130
+ istart        1824
+- it        2131
+ istart        1824
+- it        2132
+ istart        1824
+- it        2133
+ istart        1824
+- it        2134
+ istart        1824
+- it        2135
+ istart        1824
+o it        2136
+ istart        1824
+
+Time:  2012    6   27
+- it        2137
+ istart        1824
+- it        2138
+ istart        1824
+- it        2139
+ istart        1824
+* it        2140
+ istart        1824
+- it        2141
+ istart        1824
+- it        2142
+ istart        1824
+- it        2143
+ istart        1824
+- it        2144
+ istart        1824
+- it        2145
+ istart        1824
+- it        2146
+ istart        1824
+- it        2147
+ istart        1824
+o it        2148
+ istart        1824
+
+Time:  2012    6   28
+- it        2149
+ istart        1824
+- it        2150
+ istart        1824
+- it        2151
+ istart        1824
+* it        2152
+ istart        1824
+- it        2153
+ istart        1824
+- it        2154
+ istart        1824
+- it        2155
+ istart        1824
+- it        2156
+ istart        1824
+- it        2157
+ istart        1824
+- it        2158
+ istart        1824
+- it        2159
+ istart        1824
+o it        2160
+ istart        1824
+
+Time:  2012    6   29
+- it        2161
+ istart        1824
+- it        2162
+ istart        1824
+- it        2163
+ istart        1824
+* it        2164
+ istart        1824
+- it        2165
+ istart        1824
+- it        2166
+ istart        1824
+- it        2167
+ istart        1824
+- it        2168
+ istart        1824
+- it        2169
+ istart        1824
+- it        2170
+ istart        1824
+- it        2171
+ istart        1824
+o it        2172
+ istart        1824
+
+Time:  2012    6   30
+- it        2173
+ istart        1824
+- it        2174
+ istart        1824
+- it        2175
+ istart        1824
+* it        2176
+ istart        1824
+- it        2177
+ istart        1824
+- it        2178
+ istart        1824
+- it        2179
+ istart        1824
+- it        2180
+ istart        1824
+- it        2181
+ istart        1824
+- it        2182
+ istart        1824
+- it        2183
+ istart        1824
+o Close the netcdf file
+  
+ ***   THE END   ***
+
+Computation time =          0h         2m     42.29s  

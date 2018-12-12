@@ -91,7 +91,7 @@
  !initback      = '/home/dbenkort/Documents/MODELS/git_krill/NEMO_GSL/trunk/KrillModelNETCDF/TEST_BACK_TR_traj.nc',
  partfile      = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/src/run/data/part_gulf_unif.dat',
  parsfile      = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/src/run/data/PARS_3D.dat',
- outfile       = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/OUTPUT/CLONE_2012_TR'/ 
+ outfile       = '/home/dbenkort/Documents/MODELS/PHYSIO_3D/OUTPUT/DYN_CLONE_2012_TR'/ 
 
 
 ! Provide parameters for physiological simulation

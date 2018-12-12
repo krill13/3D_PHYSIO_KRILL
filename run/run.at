@@ -12,6 +12,6 @@ export OMP_NUM_THREADS=8
 # Increase the maximum size of stack variables for parallelization (in Kbytes)
 ulimit -s 1048576
 
-./chap3_pars_dynamic_run.x #> test.out
+./chap3_pars_dynamic_run.x > dynamic_clone_tr_2012.out
 
 exit 0
